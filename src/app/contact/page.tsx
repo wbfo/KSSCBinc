@@ -138,7 +138,10 @@ export default function Contact() {
                                         <div className="w-12 h-12 rounded-2xl bg-off-white text-2xl flex items-center justify-center shrink-0 border border-gray-100/50 shadow-sm text-green-mid">📞</div>
                                         <div>
                                             <div className="text-[0.75rem] uppercase tracking-widest text-charcoal/50 font-bold mb-1">General Phone</div>
-                                            <p className="m-0 font-bold text-green-deep hover:text-green-mid text-lg transition-colors"><a href="tel:011231088620751">011-231-088-620-7513</a></p>
+                                            <p className="m-0 font-bold text-green-deep hover:text-green-mid text-lg transition-colors leading-tight">
+                                                <a href="tel:0886207513" className="block mb-1">Liberia: 088-620-7513</a>
+                                                <a href="tel:0778844882" className="block text-[0.95rem]">Liberia: 077-884-4882</a>
+                                            </p>
                                         </div>
                                     </div>
                                     <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
