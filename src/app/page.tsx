@@ -88,14 +88,16 @@ export default function Home() {
             className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center"
           >
             {[
-              { num: "8", label: "Core City Objectives" },
-              { num: "3", label: "Active Pillars of Work" },
-              { num: "100%", label: "Community-Driven" },
-              { num: "2025", label: "Incorporated & Active" },
+              { num: "8", label: "Core City Objectives", link: "/about#vision" },
+              { num: "3", label: "Active Pillars of Work", link: "/projects" },
+              { num: "100%", label: "Community-Driven", link: "/get-involved" },
+              { num: "2025", label: "Incorporated & Active", link: "/about" },
             ].map((stat, i) => (
-              <motion.div key={i} variants={fadeUp}>
-                <span className="block text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-2 drop-shadow-md">{stat.num}</span>
-                <span className="text-[0.8rem] md:text-[0.9rem] font-bold tracking-widest uppercase text-yellow-sun/90">{stat.label}</span>
+              <motion.div key={i} variants={fadeUp} className="group">
+                <Link href={stat.link} className="block hover:scale-105 transition-transform duration-300">
+                  <span className="block text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-2 drop-shadow-md group-hover:text-yellow-sun transition-colors duration-300">{stat.num}</span>
+                  <span className="text-[0.8rem] md:text-[0.9rem] font-bold tracking-widest uppercase text-yellow-sun/90 group-hover:text-white transition-colors duration-300">{stat.label}</span>
+                </Link>
               </motion.div>
             ))}
           </motion.div>
