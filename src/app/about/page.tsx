@@ -20,6 +20,17 @@ const staggerContainer = {
 export default function About() {
     return (
         <>
+            {/* ===== FIXED FLAG BACKGROUND ===== */}
+            <div className="fixed inset-0 z-[-10]">
+                <Image
+                    src="/images/liberia-flag-bg.webp"
+                    alt="Flag of Liberia Background"
+                    fill
+                    className="object-cover opacity-[0.15]"
+                    priority
+                />
+            </div>
+
             {/* ===== PAGE HERO ===== */}
             <div className="relative h-[380px] md:h-[450px] flex items-end overflow-hidden sm:-mt-[84px] -mt-[72px]">
                 <Image
@@ -50,7 +61,7 @@ export default function About() {
             </div>
 
             {/* ===== OUR STORY ===== */}
-            <section className="py-20 md:py-28 bg-white relative overflow-hidden">
+            <section className="py-20 md:py-28 bg-white/70 backdrop-blur-md relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-[40vw] h-[40vw] bg-green-pale rounded-full blur-[100px] opacity-30 -z-0 translate-x-1/2 -translate-y-1/2"></div>
                 <div className="w-full max-w-[1200px] mx-auto px-4 relative z-10">
                     <div className="flex flex-col lg:flex-row gap-12 lg:gap-20">
@@ -189,7 +200,7 @@ export default function About() {
             </section>
 
             {/* ===== VALUES ===== */}
-            <section className="py-20 md:py-32 bg-off-white relative">
+            <section className="py-20 md:py-32 bg-off-white/70 backdrop-blur-md relative">
                 <div className="w-full max-w-[1200px] mx-auto px-4 relative z-10">
                     <motion.div
                         initial="hidden"
@@ -218,7 +229,7 @@ export default function About() {
                                 key={i}
                                 variants={fadeUp}
                                 whileHover={{ y: -10, transition: { duration: 0.2 } }}
-                                className="bg-white rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgba(26,92,56,0.1)] p-10 text-center transition-shadow duration-300 border border-gray-100"
+                                className="bg-white/80 backdrop-blur-sm rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgba(26,92,56,0.1)] p-10 text-center transition-shadow duration-300 border border-white/50"
                             >
                                 <div className="w-[80px] h-[80px] bg-green-pale/50 rounded-2xl flex items-center justify-center text-4xl mb-8 mx-auto shadow-[0_4px_10px_rgba(0,0,0,0.05)] border border-white">
                                     {val.icon}
@@ -232,7 +243,7 @@ export default function About() {
             </section>
 
             {/* ===== LEADERSHIP ===== */}
-            <section className="py-20 md:py-32 bg-white relative overflow-hidden">
+            <section className="py-20 md:py-32 bg-white/70 backdrop-blur-md relative overflow-hidden">
                 <div className="absolute top-1/2 left-0 w-[40vw] h-[40vw] bg-yellow-sun/5 rounded-full blur-[100px] -z-0 -translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
 
                 <div className="w-full max-w-[1200px] mx-auto px-4 relative z-10">
@@ -261,7 +272,7 @@ export default function About() {
                                 viewport={{ once: true, margin: "-50px" }}
                                 transition={{ duration: 0.6, delay: i * 0.15 }}
                                 whileHover={{ scale: 1.02 }}
-                                className="flex flex-col sm:flex-row gap-6 sm:gap-10 bg-white p-8 md:p-10 rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgba(26,92,56,0.08)] border border-gray-100 mb-8 transition-all duration-300 relative overflow-hidden group text-center md:text-left"
+                                className="flex flex-col sm:flex-row gap-6 sm:gap-10 bg-white/80 backdrop-blur-sm p-8 md:p-10 rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgba(26,92,56,0.08)] border border-white/50 mb-8 transition-all duration-300 relative overflow-hidden group text-center md:text-left"
                             >
                                 <div className="absolute top-0 left-0 w-2 h-full bg-gradient-to-b from-green-mid to-yellow-sun opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                                 <div className="w-16 h-16 shrink-0 rounded-[1.2rem] bg-green-pale/50 text-green-deep flex items-center justify-center text-3xl font-extrabold font-serif opacity-90 mx-auto md:mx-0 shadow-sm border border-white">
