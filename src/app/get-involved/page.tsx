@@ -90,6 +90,25 @@ export default function GetInvolved() {
                                     ))}
                                 </motion.div>
 
+                                {/* Custom Amount */}
+                                <motion.div
+                                    variants={fadeUp}
+                                    className="mt-4 bg-white border border-gray-100 rounded-2xl p-5 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_35px_rgba(26,92,56,0.08)] hover:border-green-pale transition-all duration-300 flex flex-col sm:flex-row items-center gap-4"
+                                >
+                                    <div className="flex-1 w-full relative">
+                                        <span className="absolute left-4 top-1/2 -translate-y-1/2 text-charcoal/50 font-bold text-xl">$</span>
+                                        <input
+                                            type="number"
+                                            className="w-full pl-8 pr-4 py-3 bg-off-white border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-mid/50 focus:border-green-mid transition-all font-bold text-lg text-charcoal placeholder:font-normal placeholder:text-base placeholder:text-charcoal/40"
+                                            placeholder="Custom Amount"
+                                            min="1"
+                                        />
+                                    </div>
+                                    <div className="flex-1 text-[0.85rem] text-charcoal/80 leading-snug font-medium text-center sm:text-left">
+                                        🤝 Every contribution counts. Enter a custom amount to support our mission.
+                                    </div>
+                                </motion.div>
+
                                 {/* Donation CTA */}
                                 <motion.div variants={fadeUp} className="mt-12 p-8 bg-white/60 backdrop-blur-md rounded-[2rem] border border-green-pale/50 text-center shadow-xl shadow-green-deep/5 relative overflow-hidden">
                                     <div className="absolute top-0 right-0 w-32 h-32 bg-yellow-sun/10 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2"></div>
