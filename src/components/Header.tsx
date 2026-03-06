@@ -120,7 +120,8 @@ export default function Header() {
                         animate={{ opacity: 1, backdropFilter: "blur(24px)" }}
                         exit={{ opacity: 0, backdropFilter: "blur(0px)" }}
                         transition={{ duration: 0.4 }}
-                        className="fixed inset-0 z-[900] bg-green-deep/95 flex flex-col items-center justify-center p-6"
+                        onClick={toggleMenu} // Close when clicking the overlay
+                        className="fixed inset-0 z-[900] bg-green-deep/95 flex flex-col items-center justify-center p-6 cursor-pointer"
                     >
                         <motion.div
                             initial="closed"
