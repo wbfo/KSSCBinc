@@ -319,6 +319,20 @@ export default function About() {
                     </motion.div>
                 </div>
             </section>
+
+            {/* Map Section */}
+            <section className="relative w-full h-[400px] md:h-[500px] bg-charcoal">
+                <iframe
+                    src="https://maps.google.com/maps?q=Sarbo%20Sweaken,%20Liberia&t=&z=12&ie=UTF8&iwloc=&output=embed"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0, filter: 'grayscale(20%) contrast(1.1)' }}
+                    allowFullScreen={false}
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Map of Sarbo Sweaken, Liberia"
+                ></iframe>
+            </section>
         </>
     );
 }
