@@ -86,8 +86,8 @@ export default function Contact() {
 
                                     <div className="space-y-2 relative">
                                         <label htmlFor="subject" className="font-bold text-charcoal/90 text-[0.9rem] uppercase tracking-wider">Subject</label>
-                                        <select id="subject" name="subject" required className="w-full px-5 py-4 bg-white border border-gray-200 rounded-xl focus:ring-2 focus:ring-green-mid focus:border-transparent outline-none transition-all shadow-sm hover:border-gray-300 appearance-none cursor-pointer">
-                                            <option value="" disabled selected>Select a topic</option>
+                                        <select id="subject" name="subject" required defaultValue="" className="w-full px-5 py-4 bg-white border border-gray-200 rounded-xl focus:ring-2 focus:ring-green-mid focus:border-transparent outline-none transition-all shadow-sm hover:border-gray-300 appearance-none cursor-pointer">
+                                            <option value="" disabled>Select a topic</option>
                                             <option value="General Inquiry">General Inquiry</option>
                                             <option value="Volunteer">I want to Volunteer</option>
                                             <option value="Donation">Questions about Donating</option>
