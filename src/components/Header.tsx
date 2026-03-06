@@ -55,7 +55,11 @@ export default function Header() {
                 <div className="w-full max-w-[1200px] mx-auto px-4 md:px-6">
                     <div className="flex items-center justify-between gap-4">
 
-                        <Link href="/" className="flex flex-col leading-tight z-50 group">
+                        <Link
+                            href="/"
+                            onClick={() => setMobileMenuOpen(false)}
+                            className="flex flex-col leading-tight z-[1000] relative group"
+                        >
                             <span className="font-extrabold text-[1.25rem] text-white tracking-tight group-hover:text-yellow-sun transition-colors">
                                 🌿 KSSCB Inc.
                             </span>
@@ -123,6 +127,14 @@ export default function Header() {
                         onClick={toggleMenu} // Close when clicking the overlay
                         className="fixed inset-0 z-[900] bg-green-deep/95 flex flex-col items-center justify-center p-6 cursor-pointer"
                     >
+                        {/* Explicit X close button */}
+                        <button
+                            onClick={toggleMenu}
+                            className="absolute top-8 right-6 text-white/80 hover:text-white p-2 text-4xl font-light hover:scale-110 transition-transform lg:hidden"
+                            aria-label="Close menu"
+                        >
+                            ✕
+                        </button>
                         <motion.div
                             initial="closed"
                             animate="open"

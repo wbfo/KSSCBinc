@@ -41,8 +41,10 @@ export default function Home() {
             variants={staggerContainer}
             className="max-w-[780px] text-center md:text-left mx-auto md:mx-0"
           >
-            <motion.div variants={fadeUp} className="inline-flex items-center gap-2 bg-yellow-sun/20 backdrop-blur-md border border-yellow-sun/40 text-yellow-sun text-[0.8rem] font-semibold tracking-widest uppercase px-5 py-2 rounded-full mb-8 shadow-[0_0_20px_rgba(245,197,24,0.15)]">
-              🌍 Sarbo Sweaken City, Liberia, West Africa
+            <motion.div variants={fadeUp} className="inline-block mb-8">
+              <Link href="/about" className="inline-flex items-center gap-2 bg-yellow-sun/20 backdrop-blur-md border border-yellow-sun/40 text-yellow-sun text-[0.8rem] font-semibold tracking-widest uppercase px-5 py-2 rounded-full shadow-[0_0_20px_rgba(245,197,24,0.15)] hover:bg-yellow-sun/30 hover:shadow-[0_0_30px_rgba(245,197,24,0.3)] transition-all cursor-pointer">
+                🌍 Sarbo Sweaken City, Liberia, West Africa
+              </Link>
             </motion.div>
             <motion.h1 variants={fadeUp} className="text-white mb-6 drop-shadow-lg text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
               Building a Cleaner, Greener, and Healthier Sarbo Sweaken City.
@@ -248,6 +250,20 @@ export default function Home() {
             </motion.div>
           </motion.div>
         </div>
+      </section>
+
+      {/* Map Section */}
+      <section className="relative w-full h-[400px] md:h-[500px] bg-charcoal">
+        <iframe
+          src="https://maps.google.com/maps?q=Sarbo%20Sweaken,%20Liberia&t=&z=12&ie=UTF8&iwloc=&output=embed"
+          width="100%"
+          height="100%"
+          style={{ border: 0, filter: 'grayscale(20%) contrast(1.1)' }}
+          allowFullScreen={false}
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          title="Map of Sarbo Sweaken, Liberia"
+        ></iframe>
       </section>
     </>
   );
