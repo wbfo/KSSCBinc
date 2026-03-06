@@ -321,12 +321,12 @@ export default function About() {
             </section>
 
             {/* Map Section */}
-            <section className="relative w-full h-[400px] md:h-[500px] bg-charcoal">
+            <section className="relative w-full h-[400px] md:h-[500px] bg-charcoal" id="map">
                 <iframe
-                    src="https://maps.google.com/maps?q=Sarbo%20Sweaken,%20Liberia&t=&z=12&ie=UTF8&iwloc=&output=embed"
+                    src="https://maps.google.com/maps?q=Sarbo%20Sweaken,%20Liberia&t=m&z=9&ie=UTF8&iwloc=A&output=embed"
                     width="100%"
                     height="100%"
-                    style={{ border: 0, filter: 'grayscale(20%) contrast(1.1)' }}
+                    style={{ border: 0, filter: 'grayscale(15%) contrast(1.1)' }}
                     allowFullScreen={false}
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
