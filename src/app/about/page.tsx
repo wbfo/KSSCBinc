@@ -21,12 +21,12 @@ export default function About() {
     return (
         <>
             {/* ===== FIXED FLAG BACKGROUND ===== */}
-            <div className="fixed inset-0 z-[-10]">
+            <div className="fixed inset-0 z-0 pointer-events-none">
                 <Image
                     src="/images/liberia-flag-bg.webp"
                     alt="Flag of Liberia Background"
                     fill
-                    className="object-cover opacity-[0.15]"
+                    className="object-cover opacity-25"
                     priority
                 />
             </div>
