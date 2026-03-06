@@ -35,7 +35,7 @@ export default function GetInvolved() {
                         </motion.span>
                         <motion.h1 variants={fadeUp} className="text-white mt-1 mb-4 text-4xl md:text-5xl lg:text-6xl drop-shadow-md">Fuel the Transformation</motion.h1>
                         <motion.p variants={fadeUp} className="text-white/90 text-lg md:text-xl max-w-[620px] mx-auto mt-2 font-medium">
-                            Your support — financial, material, or physical — directly creates the cleaner, greener, more beautiful
+                            Your support financial, material, or physical directly creates the cleaner, greener, more beautiful
                             Sarbo Sweaken City we are building together.
                         </motion.p>
                     </motion.div>
@@ -76,7 +76,7 @@ export default function GetInvolved() {
                                         { amount: "$100", impact: "🎨 Provides paint to beautify a home façade" },
                                         { amount: "$250", impact: "🗑️ Funds 5 garbage bins for intersections" },
                                         { amount: "$500", impact: "🌳 Plants a complete curbside green corridor" },
-                                        { amount: "$1,000+", impact: "🏅 Founding Donor — City-wide recognition" },
+                                        { amount: "$1,000+", impact: "🏅 Founding Donor City-wide recognition" },
                                     ].map((tier, i) => (
                                         <motion.div
                                             key={i}
@@ -263,7 +263,7 @@ export default function GetInvolved() {
                         variants={staggerContainer}
                     >
                         <motion.h2 variants={fadeUp} className="text-charcoal mt-2 mb-6 text-4xl md:text-5xl font-extrabold max-w-[600px] mx-auto leading-tight">Every act of support leaves a mark.</motion.h2>
-                        <motion.p variants={fadeUp} className="text-charcoal/70 text-lg md:text-xl mb-12 font-medium max-w-[600px] mx-auto leading-relaxed">Whether you give $25 or $2,500 — whether you plant a tree or build a sign — you are part of the story of a city transforming itself.</motion.p>
+                        <motion.p variants={fadeUp} className="text-charcoal/70 text-lg md:text-xl mb-12 font-medium max-w-[600px] mx-auto leading-relaxed">Whether you give $25 or $2,500 whether you plant a tree or build a sign you are part of the story of a city transforming itself.</motion.p>
                         <motion.div variants={fadeUp}>
                             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="inline-block">
                                 <Link href="/contact" className="btn btn-primary btn-lg shadow-xl shadow-green-deep/20 px-10">Get in Touch with Us →</Link>

@@ -76,7 +76,7 @@ export default function About() {
                             <motion.h2 variants={fadeUp} className="section-title text-3xl md:text-4xl lg:text-5xl mb-8">A Remote Paradise with Unlimited Potential</motion.h2>
                             <div className="space-y-6 text-charcoal/80 text-lg leading-relaxed">
                                 <motion.p variants={fadeUp}>
-                                    Sarbo Sweaken City sits in the heart of River Gee County — one of Liberia's most remote and lush
+                                    Sarbo Sweaken City sits in the heart of River Gee County one of Liberia's most remote and lush
                                     counties, bordering Ivory Coast in the southeast. Surrounded by incredible rainforest, pristine
                                     rivers, and rich natural resources, River Gee is a place of breathtaking beauty that has long
                                     been underserved by national infrastructure investment.
@@ -85,19 +85,19 @@ export default function About() {
                                     Like many communities in this remote region, Sarbo Sweaken City has faced the challenge of
                                     building civic dignity without the institutional support that larger cities enjoy. Streets have
                                     long gone unnamed and unsigned. Homes lack official numbers. Public spaces have had no proper
-                                    identification. And the environment — though naturally stunning — has needed organized
+                                    identification. And the environment though naturally stunning has needed organized
                                     caretaking.
                                 </motion.p>
                                 <motion.div variants={fadeUp} className="p-6 bg-yellow-sun/10 border-l-4 border-yellow-sun rounded-r-2xl my-8">
                                     <p className="m-0 text-charcoal font-medium">
                                         KSSCB Inc. was born from the conviction that <strong>this community does not have to wait for
                                             outside help to start building a better city.</strong> Incorporated on May 21, 2025, our
-                                        organization was founded by men who have seen what organized civic effort can do — and who are
+                                        organization was founded by men who have seen what organized civic effort can do and who are
                                         committed to bringing that transformation home.
                                     </p>
                                 </motion.div>
                                 <motion.p variants={fadeUp}>
-                                    This foundational infrastructure work — trees, signs, house numbers, sanitation — is not
+                                    This foundational infrastructure work trees, signs, house numbers, sanitation is not
                                     cosmetic. It is the bedrock of a functioning, dignified community. It affects property values,
                                     public health, emergency response, tourism, and civic pride. This is why we start here, and why
                                     this work is so critical.
@@ -186,7 +186,7 @@ export default function About() {
                             <h3 className="text-white text-3xl mb-5 font-bold">Our Vision</h3>
                             <p className="text-white/85 leading-relaxed mb-5 text-[1.05rem]">
                                 To see Sarbo Sweaken City recognized as the cleanest, greenest, and most beautifully maintained
-                                city in Liberia — a model of civic pride and community-driven transformation for all of West
+                                city in Liberia a model of civic pride and community-driven transformation for all of West
                                 Africa.
                             </p>
                             <p className="text-white/85 leading-relaxed m-0 text-[1.05rem]">
@@ -256,7 +256,7 @@ export default function About() {
                     >
                         <motion.span variants={fadeUp} className="section-label mx-auto">The Team</motion.span>
                         <motion.h2 variants={fadeUp} className="section-title text-4xl md:text-5xl text-center">Our Leadership</motion.h2>
-                        <motion.p variants={fadeUp} className="section-subtitle mx-auto text-center text-lg md:text-xl">Meet the founders who are turning a vision into reality — people who love Sarbo Sweaken City and are giving their energy to see it transformed.</motion.p>
+                        <motion.p variants={fadeUp} className="section-subtitle mx-auto text-center text-lg md:text-xl">Meet the founders who are turning a vision into reality people who love Sarbo Sweaken City and are giving their energy to see it transformed.</motion.p>
                     </motion.div>
 
                     <div className="max-w-[850px] mx-auto">
@@ -303,7 +303,7 @@ export default function About() {
                         className="bg-white/20 backdrop-blur-xl border border-white/40 rounded-[3rem] p-10 md:p-16 shadow-[0_20px_50px_rgba(245,197,24,0.3)]"
                     >
                         <motion.h2 variants={fadeUp} className="text-charcoal/90 mt-2 mb-6 text-4xl md:text-5xl font-extrabold text-shadow-sm leading-tight">Ready to be part of the transformation?</motion.h2>
-                        <motion.p variants={fadeUp} className="text-charcoal/80 text-lg md:text-xl mb-12 font-medium max-w-[600px] mx-auto leading-relaxed">Whether you're donating, volunteering, or simply spreading the word — your support makes a measurable difference in Sarbo Sweaken City.</motion.p>
+                        <motion.p variants={fadeUp} className="text-charcoal/80 text-lg md:text-xl mb-12 font-medium max-w-[600px] mx-auto leading-relaxed">Whether you're donating, volunteering, or simply spreading the word your support makes a measurable difference in Sarbo Sweaken City.</motion.p>
                         <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="w-full sm:w-auto">
                                 <Link href="/get-involved" className="btn btn-primary btn-lg shadow-xl shadow-green-deep/20 w-full text-center block px-10">

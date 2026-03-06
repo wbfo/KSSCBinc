@@ -127,7 +127,7 @@ export default function Projects() {
                             className="lg:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-8"
                         >
                             {[
-                                { icon: "🌱", title: "The Acacia Melanoxylon Nursery", desc: "KSSCB Inc. is establishing a dedicated cultivation nursery for Acacia Melanoxylon Blackwood Wattle trees — a species renowned for its beauty, durability, and shade. This nursery will serve as the engine of our urban greening program, producing thousands of seedlings for city-wide distribution." },
+                                { icon: "🌱", title: "The Acacia Melanoxylon Nursery", desc: "KSSCB Inc. is establishing a dedicated cultivation nursery for Acacia Melanoxylon Blackwood Wattle trees a species renowned for its beauty, durability, and shade. This nursery will serve as the engine of our urban greening program, producing thousands of seedlings for city-wide distribution." },
                                 { icon: "🏡", title: "Citywide Curbside & Backyard Planting", desc: "Every curbside and willing backyard in Sarbo Sweaken City will receive Acacia Melanoxylon seedlings, free of charge. We are working to create a continuous green canopy that provides shade, improves air quality, prevents erosion, and dramatically increases the beauty of every street in the city." },
                                 { icon: "🌸", title: "Flowering Plants & Decorative Shrubs", desc: "Beyond trees, KSSCB Inc. is sourcing and distributing a variety of flowering plants and decorative shrubs. These will be planted at city entrances, public spaces, and along major corridors to create a vibrant, colorful, and welcoming environment that residents will be proud of." }
                             ].map((item, i) => (
@@ -170,7 +170,7 @@ export default function Projects() {
                             <motion.div variants={fadeUp} className="text-yellow-sun font-bold uppercase tracking-[0.15em] text-[0.85rem] mb-4">Pillar Two</motion.div>
                             <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl text-charcoal mb-6 font-bold">Civic Infrastructure & Navigation</motion.h2>
                             <motion.p variants={fadeUp} className="text-charcoal/70 text-[1.05rem] mb-8 leading-relaxed">
-                                Giving Sarbo Sweaken City the navigation infrastructure it deserves — so every home can be
+                                Giving Sarbo Sweaken City the navigation infrastructure it deserves so every home can be
                                 found, every street has a name, and every resident can be proud of their address.
                             </motion.p>
                             <motion.div variants={fadeUp}>
@@ -190,10 +190,10 @@ export default function Projects() {
                             className="lg:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-8"
                         >
                             {[
-                                { icon: "🔢", title: "Home Numbering Program", desc: "Every single home and building in Sarbo Sweaken City will receive an official, permanent address number. This seemingly simple act has profound implications — for mail delivery, emergency services, property registration, and civic identity. Every resident deserves a real address." },
+                                { icon: "🔢", title: "Home Numbering Program", desc: "Every single home and building in Sarbo Sweaken City will receive an official, permanent address number. This seemingly simple act has profound implications for mail delivery, emergency services, property registration, and civic identity. Every resident deserves a real address." },
                                 { icon: "🎨", title: "Citywide Painting Initiative", desc: "KSSCB Inc. is working to ensure that every public-facing surface in Sarbo Sweaken City is freshly painted and well-maintained. Clean, painted homes and buildings signal civic pride and care. We supply paint and coordinate community painting days to bring this vision to life." },
                                 { icon: "🗺️", title: "Official Street Naming", desc: "In partnership with local authorities, KSSCB Inc. is leading the effort to officially name every road and alley in Sarbo Sweaken City. Named streets create a sense of place, support emergency response, and are a fundamental marker of a modern, organized city." },
-                                { icon: "🪧", title: "Street Sign Erection", desc: "Once streets are named, they need proper, durable signs. KSSCB Inc. is fabricating and installing professional street signs at every major intersection. This is one of our most resource-intensive goals — and one of the most visually transformative." }
+                                { icon: "🪧", title: "Street Sign Erection", desc: "Once streets are named, they need proper, durable signs. KSSCB Inc. is fabricating and installing professional street signs at every major intersection. This is one of our most resource-intensive goals and one of the most visually transformative." }
                             ].map((item, i) => (
                                 <motion.div key={i} variants={fadeUp} className="bg-white rounded-[2rem] p-8 md:p-10 border border-gray-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-center md:text-left">
                                     <div className="w-16 h-16 rounded-2xl bg-off-white flex items-center justify-center text-3xl mb-6 shadow-sm border border-gray-100 mx-auto md:mx-0">
@@ -228,7 +228,7 @@ export default function Projects() {
                             <motion.div variants={fadeUp} className="text-yellow-sun font-bold uppercase tracking-[0.15em] text-[0.85rem] mb-4">Pillar Three</motion.div>
                             <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl text-charcoal mb-6 font-bold">Sanitation & Historical Preservation</motion.h2>
                             <motion.p variants={fadeUp} className="text-charcoal/70 text-[1.05rem] mb-8 leading-relaxed">
-                                A clean city requires systems — and Sarbo Sweaken's history deserves to be seen, acknowledged,
+                                A clean city requires systems and Sarbo Sweaken's history deserves to be seen, acknowledged,
                                 and protected for future generations.
                             </motion.p>
                             <motion.div variants={fadeUp}>
@@ -251,7 +251,7 @@ export default function Projects() {
                                 { icon: "🗑️", title: "Strategic Garbage Bin Placement", desc: "KSSCB Inc. is sourcing and placing heavy-duty garbage bins at strategic intersections and high-traffic areas throughout the city. Proper waste containment is the single most effective action to eliminate litter and improve public health outcomes for all Sarbo Sweaken residents." },
                                 { icon: "🛍️", title: "Heavy-Duty Trash Bag Distribution", desc: "In addition to bins, we distribute heavy-duty trash bags to households and businesses. This program creates a structured system for waste collection and disposal, complementing the bin placement program to ensure that trash has a place to go at every level of city life." },
                                 { icon: "🏫", title: "Public Institution Demarcation", desc: "Schools, hospitals, clinics, churches, and parks in Sarbo Sweaken City will be properly demarcated, marked, and made easily identifiable. Clear identification of public institutions is critical for community navigation, emergency response, and civic dignity." },
-                                { icon: "🏛️", title: "Historical Landmark Preservation", desc: "Sarbo Sweaken City has history worth preserving. KSSCB Inc. is identifying and erecting proper identification signs for historical landmarks and sites of cultural significance. These signs tell the story of who we are and where we come from — a story that must not be forgotten." }
+                                { icon: "🏛️", title: "Historical Landmark Preservation", desc: "Sarbo Sweaken City has history worth preserving. KSSCB Inc. is identifying and erecting proper identification signs for historical landmarks and sites of cultural significance. These signs tell the story of who we are and where we come from a story that must not be forgotten." }
                             ].map((item, i) => (
                                 <motion.div key={i} variants={fadeUp} className="bg-off-white rounded-[2rem] p-8 md:p-10 border border-gray-100 hover:shadow-xl transition-shadow duration-300 text-center md:text-left">
                                     <div className="w-16 h-16 rounded-2xl bg-white flex items-center justify-center text-3xl mb-6 shadow-sm mx-auto md:mx-0">

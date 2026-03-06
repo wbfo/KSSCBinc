@@ -151,7 +151,7 @@ export default function Home() {
                 KSSCB Inc. was incorporated on May 21, 2025, with a singular focus: making Sarbo Sweaken City the cleanest and most beautiful city in all of Liberia. We believe that every citizen deserves streets they can be proud of, trees that give shade, and a city that tells the world who they are.
               </motion.p>
               <motion.p variants={fadeUp} className="text-lg text-charcoal/80 mb-10 leading-relaxed">
-                From planting tree nurseries to erecting proper street signs and numbering every home, our work is foundational — and it starts now.
+                From planting tree nurseries to erecting proper street signs and numbering every home, our work is foundational and it starts now.
               </motion.p>
               <motion.div variants={fadeUp}>
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="inline-block">

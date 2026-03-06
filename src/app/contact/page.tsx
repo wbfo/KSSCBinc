@@ -36,7 +36,7 @@ export default function Contact() {
                         <motion.h1 variants={fadeUp} className="text-white mt-1 mb-4 text-4xl md:text-5xl lg:text-6xl drop-shadow-md">Let's Build Together</motion.h1>
                         <motion.p variants={fadeUp} className="text-white/90 text-lg md:text-xl max-w-[620px] mx-auto mt-2 font-medium">
                             Whether you have a question, want to donate, need to arrange a material shipment, or are ready to
-                            volunteer — we want to hear from you.
+                            volunteer we want to hear from you.
                         </motion.p>
                     </motion.div>
                 </div>
@@ -63,40 +63,45 @@ export default function Contact() {
 
                                 <form id="contactForm" noValidate className="flex flex-col gap-6">
                                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                                        <div className="flex flex-col gap-2">
-                                            <label htmlFor="firstName" className="font-bold text-charcoal/90 text-[0.9rem] uppercase tracking-wider">First Name *</label>
-                                            <input type="text" id="firstName" name="firstName" placeholder="Your first name" required className="w-full p-4 border border-gray-200 rounded-2xl font-body text-base bg-white focus:outline-none focus:border-green-mid/50 focus:ring-4 focus:ring-green-pale transition-all font-medium text-charcoal outline-none placeholder:text-gray-400 placeholder:font-normal shadow-sm" />
+                                        <div className="space-y-2 relative">
+                                            <label htmlFor="firstName" className="font-bold text-charcoal/90 text-[0.9rem] uppercase tracking-wider">First Name</label>
+                                            <input type="text" id="firstName" name="firstName" required className="w-full px-5 py-4 bg-white border border-gray-200 rounded-xl focus:ring-2 focus:ring-green-mid focus:border-transparent outline-none transition-all shadow-sm hover:border-gray-300" placeholder="John" />
                                         </div>
-                                        <div className="flex flex-col gap-2">
-                                            <label htmlFor="lastName" className="font-bold text-charcoal/90 text-[0.9rem] uppercase tracking-wider">Last Name *</label>
-                                            <input type="text" id="lastName" name="lastName" placeholder="Your last name" required className="w-full p-4 border border-gray-200 rounded-2xl font-body text-base bg-white focus:outline-none focus:border-green-mid/50 focus:ring-4 focus:ring-green-pale transition-all font-medium text-charcoal outline-none placeholder:text-gray-400 placeholder:font-normal shadow-sm" />
+                                        <div className="space-y-2 relative">
+                                            <label htmlFor="lastName" className="font-bold text-charcoal/90 text-[0.9rem] uppercase tracking-wider">Last Name</label>
+                                            <input type="text" id="lastName" name="lastName" required className="w-full px-5 py-4 bg-white border border-gray-200 rounded-xl focus:ring-2 focus:ring-green-mid focus:border-transparent outline-none transition-all shadow-sm hover:border-gray-300" placeholder="Doe" />
                                         </div>
                                     </div>
-                                    <div className="flex flex-col gap-2">
-                                        <label htmlFor="email" className="font-bold text-charcoal/90 text-[0.9rem] uppercase tracking-wider">Email Address *</label>
-                                        <input type="email" id="email" name="email" placeholder="your@email.com" required className="w-full p-4 border border-gray-200 rounded-2xl font-body text-base bg-white focus:outline-none focus:border-green-mid/50 focus:ring-4 focus:ring-green-pale transition-all font-medium text-charcoal outline-none placeholder:text-gray-400 placeholder:font-normal shadow-sm" />
+
+                                    <div className="space-y-2 relative">
+                                        <label htmlFor="email" className="font-bold text-charcoal/90 text-[0.9rem] uppercase tracking-wider">Email Address</label>
+                                        <input type="email" id="email" name="email" required className="w-full px-5 py-4 bg-white border border-gray-200 rounded-xl focus:ring-2 focus:ring-green-mid focus:border-transparent outline-none transition-all shadow-sm hover:border-gray-300" placeholder="john@example.com" />
+                                        <p className="text-xs text-charcoal/50 mt-1">We'll never share your email with anyone else.</p>
                                     </div>
+
                                     <div className="flex flex-col gap-2">
                                         <label htmlFor="phone" className="font-bold text-charcoal/90 text-[0.9rem] uppercase tracking-wider">Phone Number <span className="text-gray-400 font-normal normal-case tracking-normal">(Optional)</span></label>
                                         <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000" className="w-full p-4 border border-gray-200 rounded-2xl font-body text-base bg-white focus:outline-none focus:border-green-mid/50 focus:ring-4 focus:ring-green-pale transition-all font-medium text-charcoal outline-none placeholder:text-gray-400 placeholder:font-normal shadow-sm" />
                                     </div>
-                                    <div className="flex flex-col gap-2">
-                                        <label htmlFor="subject" className="font-bold text-charcoal/90 text-[0.9rem] uppercase tracking-wider">Subject *</label>
-                                        <div className="relative">
-                                            <select id="subject" name="subject" required defaultValue="" className="w-full p-4 border border-gray-200 rounded-2xl font-body text-base bg-white focus:outline-none focus:border-green-mid/50 focus:ring-4 focus:ring-green-pale transition-all font-medium text-charcoal outline-none tracking-wide text-[0.95rem] appearance-none custom-select-arrow shadow-sm">
-                                                <option value="" disabled className="text-gray-400">Select a subject...</option>
-                                                <option value="donation">Financial Donation Inquiry</option>
-                                                <option value="materials">Material / In-Kind Donation</option>
-                                                <option value="volunteer">Volunteer Sign-Up</option>
-                                                <option value="partnership">Partnership / Collaboration</option>
-                                                <option value="media">Media / Press Inquiry</option>
-                                                <option value="general">General Question</option>
-                                            </select>
+
+                                    <div className="space-y-2 relative">
+                                        <label htmlFor="subject" className="font-bold text-charcoal/90 text-[0.9rem] uppercase tracking-wider">Subject</label>
+                                        <select id="subject" name="subject" required className="w-full px-5 py-4 bg-white border border-gray-200 rounded-xl focus:ring-2 focus:ring-green-mid focus:border-transparent outline-none transition-all shadow-sm hover:border-gray-300 appearance-none cursor-pointer">
+                                            <option value="" disabled selected>Select a topic</option>
+                                            <option value="General Inquiry">General Inquiry</option>
+                                            <option value="Volunteer">I want to Volunteer</option>
+                                            <option value="Donation">Questions about Donating</option>
+                                            <option value="Partnership">Partnership Opportunities</option>
+                                            <option value="Media">Media Inquiry</option>
+                                        </select>
+                                        <div className="absolute right-5 top-[42px] pointer-events-none text-gray-400">
+                                            <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L7 7L13 1" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
                                         </div>
                                     </div>
-                                    <div className="flex flex-col gap-2">
-                                        <label htmlFor="message" className="font-bold text-charcoal/90 text-[0.9rem] uppercase tracking-wider">Your Message *</label>
-                                        <textarea id="message" name="message" placeholder="Tell us how you'd like to get involved, ask a question, or just say hello..." required className="w-full p-4 border border-gray-200 rounded-2xl font-body text-base bg-white focus:outline-none focus:border-green-mid/50 focus:ring-4 focus:ring-green-pale transition-all font-medium text-charcoal outline-none placeholder:text-gray-400 placeholder:font-normal min-h-[180px] resize-y shadow-sm"></textarea>
+
+                                    <div className="space-y-2 relative">
+                                        <label htmlFor="message" className="font-bold text-charcoal/90 text-[0.9rem] uppercase tracking-wider">Your Message</label>
+                                        <textarea id="message" name="message" rows={5} required className="w-full px-5 py-4 bg-white border border-gray-200 rounded-xl focus:ring-2 focus:ring-green-mid focus:border-transparent outline-none transition-all shadow-sm hover:border-gray-300 resize-y" placeholder="How can we help you?"></textarea>
                                     </div>
                                     <motion.button
                                         whileHover={{ scale: 1.02 }}
@@ -225,7 +230,7 @@ export default function Contact() {
                         variants={staggerContainer}
                     >
                         <motion.h2 variants={fadeUp} className="text-charcoal mt-2 mb-6 text-4xl md:text-5xl font-extrabold max-w-[600px] mx-auto leading-tight text-shadow-sm">Not sure how to help? Just ask.</motion.h2>
-                        <motion.p variants={fadeUp} className="text-charcoal/80 text-lg md:text-xl mb-12 font-medium max-w-[650px] mx-auto leading-relaxed">Our founders are passionate, approachable, and grateful for every message. If you're curious about our work or want to learn more before committing — we'd love to talk.</motion.p>
+                        <motion.p variants={fadeUp} className="text-charcoal/80 text-lg md:text-xl mb-12 font-medium max-w-[650px] mx-auto leading-relaxed">Our founders are passionate, approachable, and grateful for every message. If you're curious about our work or want to learn more before committing we'd love to talk.</motion.p>
                         <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="w-full sm:w-auto">
                                 <Link href="/get-involved" className="btn btn-donate btn-lg shadow-xl shadow-green-deep/20 w-full px-10">
