@@ -43,7 +43,7 @@ export default function Projects() {
             </div>
 
             {/* ===== INTRO ===== */}
-            <section className="py-20 md:py-28 bg-off-white relative">
+            <section className="py-20 md:py-28 bg-off-white relative" id="objectives">
                 <div className="w-full max-w-[1200px] mx-auto px-4 relative z-10">
                     <motion.div
                         initial="hidden"

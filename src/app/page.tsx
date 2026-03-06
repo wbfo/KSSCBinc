@@ -88,7 +88,7 @@ export default function Home() {
             className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center"
           >
             {[
-              { num: "8", label: "Core City Objectives", link: "/about#objectives" },
+              { num: "8", label: "Core City Objectives", link: "/projects#objectives" },
               { num: "3", label: "Active Pillars of Work", link: "#pillars" },
               { num: "100%", label: "Community-Driven", link: "/get-involved" },
               { num: "2025", label: "Incorporated & Active", link: "/about" },
