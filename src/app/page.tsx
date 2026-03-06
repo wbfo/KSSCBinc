@@ -89,7 +89,7 @@ export default function Home() {
           >
             {[
               { num: "8", label: "Core City Objectives", link: "/about#objectives" },
-              { num: "3", label: "Active Pillars of Work", link: "/projects" },
+              { num: "3", label: "Active Pillars of Work", link: "#pillars" },
               { num: "100%", label: "Community-Driven", link: "/get-involved" },
               { num: "2025", label: "Incorporated & Active", link: "/about" },
             ].map((stat, i) => (
@@ -163,7 +163,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative py-20 md:py-32 bg-white">
+      <section className="relative py-20 md:py-32 bg-white" id="pillars">
         <div className="absolute bottom-0 left-0 w-[50vw] h-[50vw] bg-yellow-sun/5 rounded-full blur-[100px] -z-0 -translate-x-1/2 translate-y-1/2"></div>
         <div className="w-full max-w-[1200px] mx-auto px-4 relative z-10">
           <motion.div
