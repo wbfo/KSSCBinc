@@ -26,6 +26,7 @@ export default function Header() {
         { href: "/", label: "Home" },
         { href: "/about", label: "About Us" },
         { href: "/projects", label: "Our Projects" },
+        { href: "/gallery", label: "Gallery" },
         { href: "/get-involved", label: "Get Involved" },
         { href: "/contact", label: "Contact" },
     ];

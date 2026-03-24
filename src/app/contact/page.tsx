@@ -172,7 +172,7 @@ export default function Contact() {
                                         <div>
                                             <div className="text-[0.75rem] uppercase tracking-widest text-charcoal/50 font-bold mb-1">Rev. Thomas G. Johnson – US Direct (NYC)</div>
                                             <p className="m-0 font-bold text-green-deep hover:text-green-mid text-lg transition-colors leading-tight">
-                                                <a href="tel:13417173388" className="block mb-1">Primary: (341) 717-3388</a>
+                                                <a href="tel:13477773388" className="block mb-1">Primary: (347) 777-3388</a>
                                                 <a href="tel:13479120405" className="block text-[0.95rem]">+1 (347) 912-0405</a>
                                             </p>
                                         </div>

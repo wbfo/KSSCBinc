@@ -262,7 +262,7 @@ export default function About() {
                     <div className="max-w-[850px] mx-auto">
                         {[
                             { num: "1", name: "Rev. Thomas Johnson", role: "Primary Founder - Executive Director", desc: "Based in the United States, Rev. Johnson brings the strategic vision and moral leadership necessary to guide KSSCB Inc. He coordinates our international efforts and maintains the organization's commitment to transforming Sarbo Sweaken City into a model of civic pride." },
-                            { num: "2", name: "Franklin Ilehka Tuareh", role: "Co-Founder", desc: "As a key founder, Franklin plays a vital role in the organization's direction and development. His commitment to the mission of KSSCB Inc. is driven by a deep desire to see Sarbo Sweaken City thrive through organized civic effort and community-led beautification projects." },
+                            { num: "2", name: "Franklin Wlehka Tuweh", role: "Co-Founder", desc: "As a key founder, Franklin plays a vital role in the organization's direction and development. His commitment to the mission of KSSCB Inc. is driven by a deep desire to see Sarbo Sweaken City thrive through organized civic effort and community-led beautification projects." },
                             { num: "3", name: "Patrick C Kumeh", role: "Secretary", desc: "Serving on the ground in Liberia, Patrick is a committed community leader who manages the daily operations and executes the mission of KSSCB Inc. His local knowledge and tireless work on the ground are invaluable to our hands-on mission in Sarbo Sweaken City." }
                         ].map((leader, i) => (
                             <motion.div
