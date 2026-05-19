@@ -145,7 +145,7 @@ export default function Home() {
               <motion.span variants={fadeUp} className="section-label mx-auto md:mx-0">Our Mission</motion.span>
               <motion.h2 variants={fadeUp} className="section-title text-4xl md:text-5xl mb-6">Rooted in community.<br />Grown for the future.</motion.h2>
               <motion.blockquote variants={fadeUp} className="font-serif text-[1.2rem] md:text-[1.3rem] italic text-mid-text border-l-4 border-yellow-sun pl-6 my-8 leading-relaxed text-left">
-                "To provide a dignified, sustainable, and wholesome functioning environment for the citizens of Sarbo Sweaken City."
+                &quot;To provide a dignified, sustainable, and wholesome functioning environment for the citizens of Sarbo Sweaken City.&quot;
               </motion.blockquote>
               <motion.p variants={fadeUp} className="text-lg text-charcoal/80 mb-6 leading-relaxed">
                 KSSCB Inc. was incorporated on May 21, 2025, with a singular focus: making Sarbo Sweaken City the cleanest and most beautiful city in all of Liberia. We believe that every citizen deserves streets they can be proud of, trees that give shade, and a city that tells the world who they are.

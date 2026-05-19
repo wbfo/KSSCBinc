@@ -25,8 +25,10 @@ export default function Footer() {
                             <li><Link href="/" className="text-[0.9rem] text-white/60 hover:text-yellow-sun transition-all duration-300">Home</Link></li>
                             <li><Link href="/about" className="text-[0.9rem] text-white/60 hover:text-yellow-sun transition-all duration-300">About Us</Link></li>
                             <li><Link href="/projects" className="text-[0.9rem] text-white/60 hover:text-yellow-sun transition-all duration-300">Our Projects</Link></li>
+                            <li><Link href="/gallery" className="text-[0.9rem] text-white/60 hover:text-yellow-sun transition-all duration-300">Gallery</Link></li>
                             <li><Link href="/get-involved" className="text-[0.9rem] text-white/60 hover:text-yellow-sun transition-all duration-300">Get Involved</Link></li>
                             <li><Link href="/contact" className="text-[0.9rem] text-white/60 hover:text-yellow-sun transition-all duration-300">Contact</Link></li>
+                            <li className="mt-1"><Link href="/submit" className="text-[0.9rem] text-yellow-sun hover:text-white transition-all duration-300 font-bold">📷 Share a Photo</Link></li>
                         </ul>
                     </div>
 

@@ -76,7 +76,7 @@ export default function About() {
                             <motion.h2 variants={fadeUp} className="section-title text-3xl md:text-4xl lg:text-5xl mb-8">A Remote Paradise with Unlimited Potential</motion.h2>
                             <div className="space-y-6 text-charcoal/80 text-lg leading-relaxed">
                                 <motion.p variants={fadeUp}>
-                                    Sarbo Sweaken City sits in the heart of River Gee County one of Liberia's most remote and lush
+                                    Sarbo Sweaken City sits in the heart of River Gee County one of Liberia&apos;s most remote and lush
                                     counties, bordering Ivory Coast in the southeast. Surrounded by incredible rainforest, pristine
                                     rivers, and rich natural resources, River Gee is a place of breathtaking beauty that has long
                                     been underserved by national infrastructure investment.
@@ -173,7 +173,7 @@ export default function About() {
                                 To provide a dignified, sustainable, and wholesome functioning environment for the citizens of
                                 Sarbo Sweaken City by cultivating urban greenery, building proper civic infrastructure, ensuring
                                 effective sanitation, and preserving the historical and cultural landmarks that define our
-                                community's identity.
+                                community&apos;s identity.
                             </p>
                             <p className="text-white/85 leading-relaxed m-0 text-[1.05rem]">
                                 We achieve this through organized community action, strategic resource mobilization, and
@@ -303,7 +303,7 @@ export default function About() {
                         className="bg-white/20 backdrop-blur-xl border border-white/40 rounded-[3rem] p-10 md:p-16 shadow-[0_20px_50px_rgba(245,197,24,0.3)]"
                     >
                         <motion.h2 variants={fadeUp} className="text-charcoal/90 mt-2 mb-6 text-4xl md:text-5xl font-extrabold text-shadow-sm leading-tight">Ready to be part of the transformation?</motion.h2>
-                        <motion.p variants={fadeUp} className="text-charcoal/80 text-lg md:text-xl mb-12 font-medium max-w-[600px] mx-auto leading-relaxed">Whether you're donating, volunteering, or simply spreading the word your support makes a measurable difference in Sarbo Sweaken City.</motion.p>
+                        <motion.p variants={fadeUp} className="text-charcoal/80 text-lg md:text-xl mb-12 font-medium max-w-[600px] mx-auto leading-relaxed">Whether you&apos;re donating, volunteering, or simply spreading the word your support makes a measurable difference in Sarbo Sweaken City.</motion.p>
                         <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="w-full sm:w-auto">
                                 <Link href="/get-involved" className="btn btn-primary btn-lg shadow-xl shadow-green-deep/20 w-full text-center block px-10">

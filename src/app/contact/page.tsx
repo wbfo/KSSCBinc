@@ -33,7 +33,7 @@ export default function Contact() {
                         <motion.span variants={fadeUp} className="inline-block text-[0.75rem] font-bold tracking-[0.12em] uppercase bg-yellow-sun/20 backdrop-blur-md text-yellow-sun px-4 py-1.5 rounded-full mb-4 border border-yellow-sun/30 shadow-[0_0_15px_rgba(245,197,24,0.15)]">
                             Reach Out
                         </motion.span>
-                        <motion.h1 variants={fadeUp} className="text-white mt-1 mb-4 text-4xl md:text-5xl lg:text-6xl drop-shadow-md">Let's Build Together</motion.h1>
+                        <motion.h1 variants={fadeUp} className="text-white mt-1 mb-4 text-4xl md:text-5xl lg:text-6xl drop-shadow-md">Let&apos;s Build Together</motion.h1>
                         <motion.p variants={fadeUp} className="text-white/90 text-lg md:text-xl max-w-[620px] mx-auto mt-2 font-medium">
                             Whether you have a question, want to donate, need to arrange a material shipment, or are ready to
                             volunteer we want to hear from you.
@@ -59,7 +59,7 @@ export default function Contact() {
                         >
                             <motion.div variants={fadeUp} className="bg-off-white/80 backdrop-blur-xl border border-gray-100 p-8 md:p-12 rounded-[2.5rem] shadow-[0_15px_40px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_50px_rgba(26,92,56,0.05)] transition-shadow">
                                 <h2 className="text-charcoal mb-3 text-3xl font-bold">Send us a Message</h2>
-                                <p className="text-charcoal/70 mb-8 text-[1.05rem] font-medium leading-relaxed">Fill out the form below and we'll get back to you as soon as possible.</p>
+                                <p className="text-charcoal/70 mb-8 text-[1.05rem] font-medium leading-relaxed">Fill out the form below and we&apos;ll get back to you as soon as possible.</p>
 
                                 <form id="contactForm" noValidate className="flex flex-col gap-6">
                                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -76,7 +76,7 @@ export default function Contact() {
                                     <div className="space-y-2 relative">
                                         <label htmlFor="email" className="font-bold text-charcoal/90 text-[0.9rem] uppercase tracking-wider">Email Address</label>
                                         <input type="email" id="email" name="email" required className="w-full px-5 py-4 bg-white border border-gray-200 rounded-xl focus:ring-2 focus:ring-green-mid focus:border-transparent outline-none transition-all shadow-sm hover:border-gray-300" placeholder="john@example.com" />
-                                        <p className="text-xs text-charcoal/50 mt-1">We'll never share your email with anyone else.</p>
+                                        <p className="text-xs text-charcoal/50 mt-1">We&apos;ll never share your email with anyone else.</p>
                                     </div>
 
                                     <div className="flex flex-col gap-2">
@@ -210,7 +210,7 @@ export default function Contact() {
                                     </p>
                                     <p className="text-[0.8rem] text-charcoal/60 leading-relaxed mt-4 mb-0 max-w-[280px] mx-auto">
                                         River Gee County is located in the remote southeastern corner of Liberia, bordering Côte
-                                        d'Ivoire.
+                                        d&apos;Ivoire.
                                     </p>
                                 </div>
                             </motion.div>
@@ -233,7 +233,7 @@ export default function Contact() {
                         variants={staggerContainer}
                     >
                         <motion.h2 variants={fadeUp} className="text-charcoal mt-2 mb-6 text-4xl md:text-5xl font-extrabold max-w-[600px] mx-auto leading-tight text-shadow-sm">Not sure how to help? Just ask.</motion.h2>
-                        <motion.p variants={fadeUp} className="text-charcoal/80 text-lg md:text-xl mb-12 font-medium max-w-[650px] mx-auto leading-relaxed">Our founders are passionate, approachable, and grateful for every message. If you're curious about our work or want to learn more before committing we'd love to talk.</motion.p>
+                        <motion.p variants={fadeUp} className="text-charcoal/80 text-lg md:text-xl mb-12 font-medium max-w-[650px] mx-auto leading-relaxed">Our founders are passionate, approachable, and grateful for every message. If you&apos;re curious about our work or want to learn more before committing we&apos;d love to talk.</motion.p>
                         <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="w-full sm:w-auto">
                                 <Link href="/get-involved" className="btn btn-donate btn-lg shadow-xl shadow-green-deep/20 w-full px-10">

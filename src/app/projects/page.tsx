@@ -228,7 +228,7 @@ export default function Projects() {
                             <motion.div variants={fadeUp} className="text-yellow-sun font-bold uppercase tracking-[0.15em] text-[0.85rem] mb-4">Pillar Three</motion.div>
                             <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl text-charcoal mb-6 font-bold">Sanitation & Historical Preservation</motion.h2>
                             <motion.p variants={fadeUp} className="text-charcoal/70 text-[1.05rem] mb-8 leading-relaxed">
-                                A clean city requires systems and Sarbo Sweaken's history deserves to be seen, acknowledged,
+                                A clean city requires systems and Sarbo Sweaken&apos;s history deserves to be seen, acknowledged,
                                 and protected for future generations.
                             </motion.p>
                             <motion.div variants={fadeUp}>

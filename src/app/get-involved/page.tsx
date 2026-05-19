@@ -62,7 +62,7 @@ export default function GetInvolved() {
                                 <motion.span variants={fadeUp} className="text-sm font-bold tracking-widest uppercase text-green-mid mb-2 block">Financial Support</motion.span>
                                 <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl text-charcoal mb-6 font-bold">Make a Monetary Donation</motion.h2>
                                 <motion.p variants={fadeUp} className="text-charcoal/70 text-[1.05rem] mb-10 leading-relaxed font-medium">
-                                    Financial contributions are the lifeblood of KSSCB Inc.'s operations. Every dollar is
+                                    Financial contributions are the lifeblood of KSSCB Inc.&apos;s operations. Every dollar is
                                     tracked transparently and goes directly toward materials, signs, supplies, and
                                     volunteer workforce support.
                                 </motion.p>
@@ -180,7 +180,7 @@ export default function GetInvolved() {
                                 <motion.span variants={fadeUp} className="text-sm font-bold tracking-widest uppercase text-green-mid mb-2 block">Direct Giving</motion.span>
                                 <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl text-charcoal mb-6 font-bold">The Material Wishlist</motion.h2>
                                 <motion.p variants={fadeUp} className="text-charcoal/70 text-[1.05rem] mb-10 leading-relaxed font-medium">
-                                    Can't send money? Send materials! These are the physical items KSSCB Inc. urgently needs.
+                                    Can&apos;t send money? Send materials! These are the physical items KSSCB Inc. urgently needs.
                                     Sourcing and shipping these items to Sarbo Sweaken City is a tangible act of love.
                                 </motion.p>
 
@@ -236,7 +236,7 @@ export default function GetInvolved() {
                                 <motion.div variants={fadeUp} className="w-16 h-16 bg-white/10 backdrop-blur-lg rounded-2xl flex items-center justify-center text-3xl mx-auto mb-6 border border-white/10 shadow-inner">📣</motion.div>
                                 <motion.h3 variants={fadeUp} className="text-white mb-4 text-3xl font-bold">Spread the Word</motion.h3>
                                 <motion.p variants={fadeUp} className="text-white/70 text-[1rem] mb-8 max-w-[350px] mx-auto leading-relaxed">
-                                    Even if you can't give right now, sharing our mission with one person who can is priceless.
+                                    Even if you can&apos;t give right now, sharing our mission with one person who can is priceless.
                                 </motion.p>
                                 <motion.div variants={fadeUp}>
                                     <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="inline-block">
