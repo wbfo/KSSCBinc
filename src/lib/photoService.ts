@@ -20,7 +20,7 @@ const DEFAULT_PHOTOS: Photo[] = [
     category: 'Sanitation',
     image_url: '/images/cleanup_path.jpg',
     status: 'approved',
-    created_at: new Date(Date.now() - 5 * 24 * 60 * 60 * 1000).toISOString(),
+    created_at: new Date(Date.now() - 13 * 24 * 60 * 60 * 1000).toISOString(),
   },
   {
     id: 'seed-2',
@@ -30,7 +30,7 @@ const DEFAULT_PHOTOS: Photo[] = [
     category: 'Sanitation',
     image_url: '/images/mowing_grass.jpg',
     status: 'approved',
-    created_at: new Date(Date.now() - 4 * 24 * 60 * 60 * 1000).toISOString(),
+    created_at: new Date(Date.now() - 12 * 24 * 60 * 60 * 1000).toISOString(),
   },
   {
     id: 'seed-3',
@@ -40,7 +40,7 @@ const DEFAULT_PHOTOS: Photo[] = [
     category: 'Infrastructure',
     image_url: '/images/sweaken_highway.png',
     status: 'approved',
-    created_at: new Date(Date.now() - 3 * 24 * 60 * 60 * 1000).toISOString(),
+    created_at: new Date(Date.now() - 11 * 24 * 60 * 60 * 1000).toISOString(),
   },
   {
     id: 'seed-4',
@@ -50,7 +50,7 @@ const DEFAULT_PHOTOS: Photo[] = [
     category: 'Greening',
     image_url: '/images/weeding_team.jpg',
     status: 'approved',
-    created_at: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000).toISOString(),
+    created_at: new Date(Date.now() - 10 * 24 * 60 * 60 * 1000).toISOString(),
   },
   {
     id: 'seed-5',
@@ -59,6 +59,86 @@ const DEFAULT_PHOTOS: Photo[] = [
     caption: 'Team efforts to clear fallen palm trunks and debris from public thoroughfares.',
     category: 'Sanitation',
     image_url: '/images/palm_cleanup.jpg',
+    status: 'approved',
+    created_at: new Date(Date.now() - 9 * 24 * 60 * 60 * 1000).toISOString(),
+  },
+  {
+    id: 'seed-6',
+    submitter_name: 'KSSCB Field Team',
+    submitter_email: 'team@ksscb.org',
+    caption: 'Dedicated team members trimming high grass and clearing the roadside for safer travel.',
+    category: 'Sanitation',
+    image_url: '/images/road_side_trimming.jpg',
+    status: 'approved',
+    created_at: new Date(Date.now() - 8 * 24 * 60 * 60 * 1000).toISOString(),
+  },
+  {
+    id: 'seed-7',
+    submitter_name: 'KSSCB Field Team',
+    submitter_email: 'team@ksscb.org',
+    caption: 'Sweeping and collecting litter to maintain pristine public walkways in the community.',
+    category: 'Sanitation',
+    image_url: '/images/street_sweeping.jpg',
+    status: 'approved',
+    created_at: new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString(),
+  },
+  {
+    id: 'seed-8',
+    submitter_name: 'KSSCB Field Team',
+    submitter_email: 'team@ksscb.org',
+    caption: 'Our proud field team gathered together during a successful local cleanup campaign.',
+    category: 'Sanitation',
+    image_url: '/images/field_team_pose.jpg',
+    status: 'approved',
+    created_at: new Date(Date.now() - 6 * 24 * 60 * 60 * 1000).toISOString(),
+  },
+  {
+    id: 'seed-9',
+    submitter_name: 'KSSCB Field Team',
+    submitter_email: 'team@ksscb.org',
+    caption: 'Clearing thick brush and overgrown vegetation along the highway borders.',
+    category: 'Sanitation',
+    image_url: '/images/vegetation_clearing.jpg',
+    status: 'approved',
+    created_at: new Date(Date.now() - 5 * 24 * 60 * 60 * 1000).toISOString(),
+  },
+  {
+    id: 'seed-10',
+    submitter_name: 'KSSCB Field Team',
+    submitter_email: 'team@ksscb.org',
+    caption: 'Removing hazards and maintaining visibility on the main highways to ensure public safety.',
+    category: 'Infrastructure',
+    image_url: '/images/highway_maintenance.jpg',
+    status: 'approved',
+    created_at: new Date(Date.now() - 4 * 24 * 60 * 60 * 1000).toISOString(),
+  },
+  {
+    id: 'seed-11',
+    submitter_name: 'KSSCB Field Team',
+    submitter_email: 'team@ksscb.org',
+    caption: 'Local residents joining hands with our field team for a major neighborhood sanitation drive.',
+    category: 'Sanitation',
+    image_url: '/images/community_cleanup_effort.jpg',
+    status: 'approved',
+    created_at: new Date(Date.now() - 3 * 24 * 60 * 60 * 1000).toISOString(),
+  },
+  {
+    id: 'seed-12',
+    submitter_name: 'KSSCB Field Team',
+    submitter_email: 'team@ksscb.org',
+    caption: 'Collecting and sorting waste from public receptacles to keep the neighborhood clean.',
+    category: 'Sanitation',
+    image_url: '/images/trash_collection.jpg',
+    status: 'approved',
+    created_at: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000).toISOString(),
+  },
+  {
+    id: 'seed-13',
+    submitter_name: 'KSSCB Field Team',
+    submitter_email: 'team@ksscb.org',
+    caption: 'Clearing debris and brushwood along the highway to prevent road blockage.',
+    category: 'Infrastructure',
+    image_url: '/images/roadway_brush_clearing.jpg',
     status: 'approved',
     created_at: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000).toISOString(),
   },
@@ -76,12 +156,12 @@ function getMockPhotos(): Photo[] {
   }
   try {
     const parsed = JSON.parse(stored);
-    // Invalidate old cache if they contain placeholder images
+    // Invalidate old cache if they contain placeholder images or have different size
     const hasOldPhotos = parsed.some((p: any) => 
       p.image_url.includes('greening_project_liberia') || 
       p.image_url.includes('community_cleanup') ||
       p.image_url.includes('street_signage')
-    );
+    ) || parsed.length < DEFAULT_PHOTOS.length;
     if (hasOldPhotos) {
       localStorage.setItem('ksscb_photos', JSON.stringify(DEFAULT_PHOTOS));
       return DEFAULT_PHOTOS;
