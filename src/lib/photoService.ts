@@ -14,51 +14,51 @@ export interface Photo {
 const DEFAULT_PHOTOS: Photo[] = [
   {
     id: 'seed-1',
-    submitter_name: 'Franklin Wlehka Tuweh',
-    submitter_email: 'franklin@ksscb.org',
-    caption: 'Urban greening project in Liberia — Phase 3 development in progress.',
-    category: 'Infrastructure',
-    image_url: '/images/greening_project_liberia.png',
+    submitter_name: 'KSSCB Field Team',
+    submitter_email: 'team@ksscb.org',
+    caption: 'Sarbo Sweaken pathway cleanup in progress by our dedicated field team.',
+    category: 'Sanitation',
+    image_url: '/images/cleanup_path.jpg',
     status: 'approved',
     created_at: new Date(Date.now() - 5 * 24 * 60 * 60 * 1000).toISOString(),
   },
   {
     id: 'seed-2',
-    submitter_name: 'KSSCB Sanitation Team',
-    submitter_email: 'cleanup@ksscb.org',
-    caption: 'Community cleanup and beautification efforts in the local sectors.',
+    submitter_name: 'KSSCB Field Team',
+    submitter_email: 'team@ksscb.org',
+    caption: 'Trimming and landscaping high-traffic roadsides to keep the environment safe and beautiful.',
     category: 'Sanitation',
-    image_url: '/images/community_cleanup.png',
+    image_url: '/images/mowing_grass.jpg',
     status: 'approved',
     created_at: new Date(Date.now() - 4 * 24 * 60 * 60 * 1000).toISOString(),
   },
   {
     id: 'seed-3',
-    submitter_name: 'Operations Manager',
-    submitter_email: 'info@ksscb.org',
-    caption: 'New professional street signage deployed for enhanced civic navigation.',
-    category: 'Civic Tools',
-    image_url: '/images/street_signage.png',
+    submitter_name: 'KSSCB Field Team',
+    submitter_email: 'team@ksscb.org',
+    caption: 'Cleaned shoulders along the main Sarbo Sweaken highway.',
+    category: 'Infrastructure',
+    image_url: '/images/sweaken_highway.png',
     status: 'approved',
     created_at: new Date(Date.now() - 3 * 24 * 60 * 60 * 1000).toISOString(),
   },
   {
     id: 'seed-4',
-    submitter_name: 'Conservation Coordinator',
-    submitter_email: 'conservation@ksscb.org',
-    caption: 'Scenic aerial view of River Gee County conservation zones.',
-    category: 'Conservation',
-    image_url: '/images/scenic_liberia.png',
+    submitter_name: 'KSSCB Field Team',
+    submitter_email: 'team@ksscb.org',
+    caption: 'Field workers clearing dense weeds and preparing land for civic greening initiatives.',
+    category: 'Greening',
+    image_url: '/images/weeding_team.jpg',
     status: 'approved',
     created_at: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000).toISOString(),
   },
   {
     id: 'seed-5',
-    submitter_name: 'Greening Committee',
-    submitter_email: 'greening@ksscb.org',
-    caption: 'Active seedling nursery for foundational urban greening and tree plantings.',
-    category: 'Greening',
-    image_url: '/images/seedling-nursery.png',
+    submitter_name: 'KSSCB Field Team',
+    submitter_email: 'team@ksscb.org',
+    caption: 'Team efforts to clear fallen palm trunks and debris from public thoroughfares.',
+    category: 'Sanitation',
+    image_url: '/images/palm_cleanup.jpg',
     status: 'approved',
     created_at: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000).toISOString(),
   },
@@ -75,7 +75,18 @@ function getMockPhotos(): Photo[] {
     return DEFAULT_PHOTOS;
   }
   try {
-    return JSON.parse(stored);
+    const parsed = JSON.parse(stored);
+    // Invalidate old cache if they contain placeholder images
+    const hasOldPhotos = parsed.some((p: any) => 
+      p.image_url.includes('greening_project_liberia') || 
+      p.image_url.includes('community_cleanup') ||
+      p.image_url.includes('street_signage')
+    );
+    if (hasOldPhotos) {
+      localStorage.setItem('ksscb_photos', JSON.stringify(DEFAULT_PHOTOS));
+      return DEFAULT_PHOTOS;
+    }
+    return parsed;
   } catch (e) {
     console.error('Failed to parse mock photos from localStorage', e);
     return DEFAULT_PHOTOS;
